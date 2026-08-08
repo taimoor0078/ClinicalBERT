@@ -3,9 +3,9 @@ from typing import Optional, Dict
 
 import numpy as np
 
-from app.model_loader import get_model
-from app.config import settings
-from app.utils import logger
+from model_loader import get_model
+from config import settings
+from utils import logger
 
 FIELD_KEYS = [
     "Tumor Type",
