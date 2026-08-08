@@ -1,9 +1,5 @@
-from fastapi import FastAPI, File, UploadFile, HTTPException
-from fastapi.responses import JSONResponse
-from fastapi.middleware.cors import CORSMiddleware
-
-from app.config import settings
-from app.utils import (
+from config import settings
+from utils import (
     validate_upload,
     save_upload_file,
     cleanup_file,
@@ -12,9 +8,9 @@ from app.utils import (
     CorruptedFileError,
     logger,
 )
-from app.preprocessing import preprocess_pdf
-from app.predictor import run_prediction
-from app.model_loader import get_model
+from preprocessing import preprocess_pdf
+from predictor import run_prediction
+from model_loader import get_model
 
 app = FastAPI(
     title=settings.APP_NAME,
