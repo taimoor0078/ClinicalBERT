@@ -4,7 +4,7 @@ import unicodedata
 import fitz
 import easyocr
 import numpy as np
-from app.utils import (
+from utils import (
     CorruptedFileError,
     EmptyFileError,
     logger,
