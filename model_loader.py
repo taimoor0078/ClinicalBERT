@@ -3,8 +3,8 @@ import threading
 import torch
 from transformers import AutoTokenizer, AutoModel
 
-from app.config import settings
-from app.utils import logger
+from config import settings
+from utils import logger
 
 
 class ClinicalBERTModel:
