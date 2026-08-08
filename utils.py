@@ -3,7 +3,7 @@ import uuid
 import logging
 from fastapi import UploadFile
 
-from app.config import settings
+from config import settings
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("neurox")
